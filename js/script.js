@@ -25,6 +25,11 @@
 //FUNCTIONS
 
 
-
 // DOCUMENT READY FUNCTION
 
+("button").click(function{
+    if(input === rock)    
+        
+        
+        
+});
