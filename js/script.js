@@ -27,9 +27,33 @@
 
 // DOCUMENT READY FUNCTION
 
-("button").click(function{
-    if(input === rock)    
+  var userChoice = '';
+  var computerChoice = '';
+  var winner = '';
+  var choices = ["rock", "paper", "scissors"];
+  
+  $(document).ready(function(){
+          $("#click").click(function(){
+                var playerChoice = $("#text").val();
+                $("#playerchoice").append(playerChoice);
+                computerChoice = choices[Math.floor(Math.random() * choices.length)];
+                $("#computerchoice").append(computerChoice);
+                
+                if(playerChoice == "rock" && computerChoice == "scissors"){
+                        winner = "The winner is the player";
+                
+                } else if(playerChoice == "rock" && computerChoice =="paper"){
+                        winner ="The winner is the computer";
+                        
+                }else if(playerChoice =="rock" && computerChoice == "rock"){
+                        winner =" A tie";
+                }
+                
+                $("#winner").html(winner);
+          });
+  });
+
+                 
+          
+
         
-        
-        
-});
