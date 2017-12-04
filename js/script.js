@@ -48,7 +48,13 @@
                 }else if(playerChoice =="rock" && computerChoice == "rock"){
                         winner =" A tie";
                 }
-                
+                 If(playerChoice == "paper" && computerChoice == "rock"){
+                        
+                 }else if(playerChoice == "paper" && computerChoice == "paper"){
+                         winner ="A tie";
+                 }else if(playerChoice == "paper" && computerChoice == "scissors"){
+                         
+                 }
                 $("#winner").html(winner);
           });
   });
