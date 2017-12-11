@@ -35,26 +35,34 @@
   $(document).ready(function(){
           $("#click").click(function(){
                 var playerChoice = $("#text").val();
-                $("#playerchoice").append(playerChoice);
+                $("#playerchoice").html("player: " + playerChoice);
                 computerChoice = choices[Math.floor(Math.random() * choices.length)];
-                $("#computerchoice").append(computerChoice);
+                $("#computerchoice").html("computer: " + computerChoice);
                 
                 if(playerChoice == "rock" && computerChoice == "scissors"){
-                        winner = "The winner is the player";
+                        winner = "The winner is the Batman/Rock";
                 
                 } else if(playerChoice == "rock" && computerChoice =="paper"){
-                        winner ="The winner is the computer";
+                        winner ="The winner is the Scarecrow/Paper";
                         
                 }else if(playerChoice =="rock" && computerChoice == "rock"){
                         winner =" A tie";
                 }
-                 If(playerChoice == "paper" && computerChoice == "rock"){
-                        
+                 if(playerChoice == "paper" && computerChoice == "rock"){
+                        winner="The winner is the Scarecrow/Paper"
                  }else if(playerChoice == "paper" && computerChoice == "paper"){
                          winner ="A tie";
                  }else if(playerChoice == "paper" && computerChoice == "scissors"){
-                         
+                         winner="The winner is the Joker/Scissors"
                  }
+                 if(playerChoice =="scissors" && computerChoice == "rock"){
+                            winner =" The winner is the Batman/Rock";
+                        }else if(playerChoice =="scissors" && computerChoice =="paper"){
+                        winner= "The winner is the Joker/Scissors";
+                             }else if(playerChoice =="scissors" && computerChoice =="scissors"){
+                                 winner="A tie";
+                             }
+                             
                 $("#winner").html(winner);
           });
   });

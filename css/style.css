@@ -1,9 +1,38 @@
 body{
-  background-color:white;
+  background-color:pink;
+background-image:url("http://vignette1.wikia.nocookie.net/batman/images/3/32/BatmanArkhamKnightGothamCity.jpg/revision/latest?cb=20140530010522");
+
+  border-radius:50px;
 }
 h1{
     color:green;
+    font-size: 60px;
+    font-family:comic sans ms;
+    border:solid;
+    border-color:purple;
 }
 button, input{
 
+}
+p, h2{
+  color: gray;
+  font-size: 25px;
+  font-family:fantasy;
+
+}
+h3{
+font-size:40px;
+color:green;
+font-family: comic sans ms;
+}
+#playerChoice, #computerChoice{
+  text-align:center;
+  font-size:50px;
+}
+button, input{
+  font-size:40px;
+}
+img{
+  height:190px;
+  width:190px;
 }
